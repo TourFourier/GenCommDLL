@@ -14,7 +14,7 @@ public:
 	CSafeMessageQueue();
 	~CSafeMessageQueue();
 
-	void Push(IMessage message);
-	IMessage Pop();
+	void Push(IMessage& message);
+	IMessage& Pop();
 };
 
