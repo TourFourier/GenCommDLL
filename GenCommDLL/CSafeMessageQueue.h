@@ -9,7 +9,7 @@
 class DLL CSafeMessageQueue
 {
 	CRITICAL_SECTION m_cs;
-	std::queue<IMessage> m_qMessageQueue;
+	std::queue<IMessage&> m_qMessageQueue;
 public:
 	CSafeMessageQueue();
 	~CSafeMessageQueue();
